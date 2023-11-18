@@ -48,7 +48,7 @@ After Rescaling the data, I trained the model again, this time it was not nessce
   This model was much faster but the accuracy was not satisfying, therefore I increased the number of ittereation to 1000.
     <img src="./Assets/cost_iterations = 1000alpha0.01,fold10.png"  />
  
-  <img src="./Assets/predict_iterations = 1000 alpha0.01,fold10.png" /> 
+  <img src="./Assets/predict_iterations = 1000, alpha0.01,fold5.png" /> 
 
 ## Conclusion
 In conclusion, the provided visualizations and data present several key insights about airline flights and delays:

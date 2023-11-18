@@ -23,10 +23,7 @@ In this project I did 3 steps of preprocessing:
 
 
 # Goals
-1. Which airline has the most flights?
-2. On which day was the delay highest?
-3. At what hour was the delay highest for each airline?
-4. Count delays that are less than 5 minutes, between 5 and 45 minutes, and more than 45 minutes.
+Building a fast, accurate and reliable linear regression model 
 
 ## Data
 The detailed data was collected through https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input.

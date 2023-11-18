@@ -19,7 +19,7 @@ In this project I did 3 steps of preprocessing:
 - Convert categorical features to numerical representation for machine learning purposes.
 
 ## Step 3: Extracting Insights for Feature Importance
-- Perform analysis or use relevant techniques (e.g., statistical tests, feature importance methods) to identify important features in the dataset.
+- Perform analysis techniques to identify important features in the dataset.
 
 
 # Goals
@@ -27,8 +27,10 @@ Building a fast, accurate and reliable linear regression model
 
 ## Data
 The detailed data was collected through https://www.kaggle.com/datasets/yasserh/housing-prices-dataset.
-<br> The original dataset contained 545 records and 13 features. After cleaning and eliminating unnecessary features, the number of records remained unchanged at 545, but the number of features decreased to 9.
+<br> The original dataset contained 545 records and 13 features including target value. After cleaning and eliminating unnecessary features, the number of records remained unchanged at 545, but the number of features decreased to 8.
 <img src="./Assets/relation.png" style="max-width: 540px"/>
+These plots demonstrate a clear relationship between price (target value) and 12 other features. Among these features, the strongest correlations exist with area, bedrooms, bathrooms, parking, and stories. Conversely, weaker correlations are observed with guestroom, basement, hotwatering, and furnishing status. Consequently, removing these features with weaker correlations to price might potentially enhance the model accuracy and expedite gradient descent speed.
+
 ## Which airline has the most flights?
 This is a list of all the airlines along with the count of their flights. As we can see, WN airline had the highest number of flights among all the airlines. Additionally, I have created a legend for this plot based on another dataset named "airline" using a one-to-many relationship between the two datasets.
 <img src="./output/output.png" style="max-width: 540px"/>

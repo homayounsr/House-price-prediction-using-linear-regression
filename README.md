@@ -2,8 +2,15 @@
 In this project I built a linear regression algorithm from scratch to predict the price of the houses based on different features
 
 # Preprocessing
-1. Dealing with null values
-2. Dealing with time and turn in to date time pattern
+In this project I did 3 steps of preprocessing:
+Step 1: Basic info
+  1) data types?
+  2) range of values? mean, max, count ...
+  3) columns name
+  4) Null values?
+  5) Duplicate values
+Step 2: Change categorical features to numerical
+Step 3: Extracting Insights to find the important features
 
 # Goals
 1. Which airline has the most flights?

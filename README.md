@@ -26,7 +26,7 @@ In this project I did 3 steps of preprocessing:
 Building a fast, accurate and reliable linear regression model 
 
 ## Data
-The detailed data was collected through [https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input](https://www.kaggle.com/datasets/yasserh/housing-prices-dataset).
+The detailed data was collected through https://www.kaggle.com/datasets/yasserh/housing-prices-dataset.
 <br> The original dataset contained 581,907,9 rows and 31 columns but after cleaning the data and just selecting the month of january to decrease the amount of data, there were 469,968 rows and 13 columns.
 
 ## Which airline has the most flights?

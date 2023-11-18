@@ -34,10 +34,16 @@ These plots demonstrate a clear relationship between price (target value) and 12
 ## Building the Model
 Linear regression is an algorithm sensitive to the scale of its features. This sensitivity can affect its performance. Therefore, the initial step in constructing this algorithm involves rescaling the 'area' feature, primarily because its range significantly differs from the other features. Once rescaled, I proceeded to define the cost function and the fit function
 
-  <img src="./Assets/cost_no rescale.png" alt="Cost Plot" width="45%" />
-  <img src="./Assets/predict no rescale.png" alt="Prediction Plot" width="45%" /> 
+  <img src="./Assets/cost_no rescale.png"  />
+ 
+  <img src="./Assets/predict no rescale.png" /> 
+<b>These plots depict the cost function (above) and the difference between predicted values and target values (below) for a model where feature scaling was not applied. In this scenario, I found it necessary to define an extremely small learning rate and a high number of learning iterations to train the model. However, Although the accuracy was good, this approach was inefficient.</b>
 
+After Rescaling the data, I trained the model again, this time it was not nessceary to choose a very small learning rate and high iteration. I chosed alpha: 0.01 and iteration: 50 with 5 fold cross validation. The output of second model is showing below:
 
+  <img src="./Assets/cost_no cost_iterations = 20alpha0.01,fold10.png"  />
+ 
+  <img src="./Assets/predict_iterations = 20 alpha0.01,fold10.png" /> 
 
 ## Conclusion
 In conclusion, the provided visualizations and data present several key insights about airline flights and delays:

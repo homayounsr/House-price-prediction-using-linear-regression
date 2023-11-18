@@ -39,27 +39,19 @@ Linear regression is an algorithm sensitive to the scale of its features. This s
   <img src="./Assets/predict no rescale.png" /> 
 <b>These plots depict the cost function (above) and the difference between predicted values and target values (below) for a model where feature scaling was not applied. In this scenario, I found it necessary to define an extremely small learning rate and a high number of learning iterations to train the model. However, Although the accuracy was good, this approach was inefficient.</b>
 
-After Rescaling the data, I trained the model again, this time it was not nessceary to choose a very small learning rate and high iteration. I chosed alpha: 0.01 and iteration: 50 with 5 fold cross validation. The output of second model is showing below:
-
+After rescaling the data, I retrained the model, and this time, there was no need to select an excessively small learning rate or use a high number of iterations. I opted for an alpha of 0.01 and conducted 50 iterations with 5-fold cross-validation. The output of the second model is presented below:
   <img src="./Assets/cost_iterations = 20alpha0.01,fold10.png"  />
  
   <img src="./Assets/predict_iterations = 20 alpha0.01,fold10.png" /> 
 
-  This model was much faster but the accuracy was not satisfying, therefore I increased the number of ittereation to 1000.
+This revised model exhibited improved speed; however, the achieved accuracy was unsatisfactory. Consequently, I increased the number of iterations to 1000 in an attempt to enhance the model's performance.
     <img src="./Assets/cost_iterations = 1000alpha0.01,fold10.png"  />
  
   <img src="./Assets/predict_iterations = 1000, alpha0.01,fold5.png" /> 
 
+
+Despite observing relatively small changes in the cost function after iteration 50, I noticed a subsequent increase in accuracy. The final plot depicting the difference between predicted and actual values indicates an improvement, suggesting that this model is more accurate.
 ## Conclusion
-In conclusion, the provided visualizations and data present several key insights about airline flights and delays:
 
-**Airline Count:** The list of airlines and their respective flight counts highlights that WN airline had the most flights among all the airlines, indicating their significant presence in the dataset.
-
-**Day-Based Delays:** The plot illustrating delays based on days of the week indicates that the majority of flight delays occurred on Fridays. This information can be valuable for both airlines and passengers when planning their travel schedules.
-
-**Heatmap Analysis:** The heatmap visualization, which examines flight delays across different airlines and days of the week, provides a comprehensive overview of how delays are distributed. It helps us understand that WN airline had the highest number of delays, particularly on Fridays. This insight can guide airline companies in identifying areas for improvement in their scheduling or operations.
-
-**Delay Categories:** The plot that categorizes delays into three groups (under 5 minutes, 5-45 minutes, and over 45 minutes) for various airlines reveals that, regardless of the airline, long delays (over 45 minutes) constitute a relatively small portion of the delays. However, the distribution of delays in these categories varies between airlines, with some airlines experiencing a higher proportion of medium delays (5-45 minutes) compared to long delays.
-
-These insights can be valuable for airlines and travelers alike. Airlines can use this information to optimize their operations and minimize delays, especially on Fridays. Passengers can make more informed decisions when planning their trips, potentially avoiding peak delay times and airlines with specific delay patterns.
+To conclude, by cleaning the data and selecting important features, I observed that properly scaling features significantly influences a linear regression model's performance. Comparing scaled and unscaled features highlighted the substantial impact of scaling on the accuracy of model predictions. This process demonstrated the crucial role of appropriately preparing the data, particularly by scaling features, in ensuring more reliable predictions when using linear regression or any algorthms which is gradient based.
 

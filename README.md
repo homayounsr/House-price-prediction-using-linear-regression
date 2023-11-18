@@ -3,14 +3,24 @@ In this project I built a linear regression algorithm from scratch to predict th
 
 # Preprocessing
 In this project I did 3 steps of preprocessing:
-Step 1: Basic info
-  1) data types?
-  2) range of values? mean, max, count ...
-  3) columns name
-  4) Null values?
-  5) Duplicate values
-Step 2: Change categorical features to numerical
-Step 3: Extracting Insights to find the important features
+## Step 1: Basic Information
+1. **Data Types**:
+   - Identify the data types present in the dataset (e.g., numerical, categorical, datetime).
+2. **Range of Values**:
+   - Explore the range of values for numerical columns (mean, max, count, etc.).
+3. **Column Names**:
+   - List of all column names present in the dataset.
+4. **Null Values**:
+   - Check for missing or null values in each column.
+5. **Duplicate Values**:
+   - Identify and handle any duplicate rows or observations.
+
+## Step 2: Encoding Categorical Features
+- Convert categorical features to numerical representation for machine learning purposes.
+
+## Step 3: Extracting Insights for Feature Importance
+- Perform analysis or use relevant techniques (e.g., statistical tests, feature importance methods) to identify important features in the dataset.
+
 
 # Goals
 1. Which airline has the most flights?

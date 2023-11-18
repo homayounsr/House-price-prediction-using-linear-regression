@@ -41,7 +41,7 @@ Linear regression is an algorithm sensitive to the scale of its features. This s
 
 After Rescaling the data, I trained the model again, this time it was not nessceary to choose a very small learning rate and high iteration. I chosed alpha: 0.01 and iteration: 50 with 5 fold cross validation. The output of second model is showing below:
 
-  <img src="./Assets/cost_no cost_iterations = 20alpha0.01,fold10.png"  />
+  <img src="./Assets/cost_iterations = 20alpha0.01,fold10.png"  />
  
   <img src="./Assets/predict_iterations = 20 alpha0.01,fold10.png" /> 
 

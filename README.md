@@ -32,6 +32,12 @@ The detailed data was collected through https://www.kaggle.com/datasets/yasserh/
 These plots demonstrate a clear relationship between price (target value) and 12 other features. Among these features, the strongest correlations exist with area, bedrooms, bathrooms, parking, and stories. Conversely, weaker correlations are observed with guestroom, basement, hotwatering, and furnishing status. Consequently, removing these features with weaker correlations to price might potentially enhance the model accuracy and expedite gradient descent speed.
 
 ## Building the Model
+Linear regression is an algorithm sensitive to the scale of its features. This sensitivity can affect its performance. Therefore, the initial step in constructing this algorithm involves rescaling the 'area' feature, primarily because its range significantly differs from the other features. Once rescaled, I proceeded to define the cost function and the fit function
+<div style="display: flex; justify-content: center;">
+  <img src="./Assets/cost_no rescale.png" alt="Cost Plot" style="max-width: 45%; margin-right: 5px;">
+  <img src="./Assets/predict no rescale.png" alt="Prediction Plot" style="max-width: 45%; margin-left: 5px;">
+</div>
+
 
 
 ## Conclusion
